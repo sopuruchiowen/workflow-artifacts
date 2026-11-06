@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "test": "vitest run src",
-    "test:coverage": "vitest run --coverage src",
+    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run src",
+    "test:coverage": "NODE_OPTIONS=--no-experimental-webstorage vitest run --coverage src",
     "test:e2e": "playwright test"
   },
   "dependencies": {
